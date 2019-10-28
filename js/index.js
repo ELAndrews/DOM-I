@@ -77,8 +77,8 @@ headText[0].style.fontSize = "5rem";
 const ctaBtn = document.getElementsByTagName("button")[0];
 ctaBtn.textContent = "Get Started";
 ctaBtn.addEventListener("mouseover", mouseOver);
-ctaBtn.addEventListener("mouseout", mouseOut)
-
+ctaBtn.addEventListener("mouseout", mouseOut);
+ctaBtn.addEventListener("click", alert);
 
 function mouseOver() {
   ctaBtn.style.color = "white";
@@ -87,6 +87,16 @@ function mouseOver() {
 function mouseOut() {
   ctaBtn.style.color = "black";
 }
+
+function alert() {
+  let alert = confirm("NO! You are NOT allowed to get started. Please return.");
+  if(alert == true) {
+    headText[0].innerHTML = 'DOM <br /> Is <br /> Awesome';
+  } else {
+    confirm("NO! NO! NO! I said No!!");
+  }
+};
+
 
 const ctaImg = document.getElementById("cta-img");
 ctaImg.src = "img/header-img.png";
