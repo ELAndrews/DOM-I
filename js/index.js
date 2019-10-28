@@ -71,7 +71,7 @@ const headerImg = document.getElementById('logo-img');
 // ------- CTA area -------//
 
 const headText = document.getElementsByTagName("h1");
-headText[0].textContent = 'DOM' + '\r\n' + 'Is Awesome';
+headText[0].innerHTML = 'DOM <br /> Is <br /> Awesome';
 headText[0].style.fontSize = "5rem";
 
 const ctaBtn = document.getElementsByTagName("button")[0];
